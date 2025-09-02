@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Market América Sul</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Smart Market América Sul</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Promoções</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <section class="promocoes">
+        <h2>Promoções do Dia</h2>
+        <div class="cards-promocao">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Arroz Premium">
+                <p>Arroz Basmati 5kg<br><span class="preco-promo">R$ 32,90</span></p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Feijão Premium">
+                <p>Feijão Preto Orgânico 1kg<br><span class="preco-promo">R$ 14,50</span></p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1464306076886-debede1a7c94?auto=format&fit=crop&w=400&q=80" alt="Óleo Premium">
+                <p>Óleo de Coco Extra Virgem 500ml<br><span class="preco-promo">R$ 22,90</span></p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <h2>Produtos</h2>
+        <form id="form-produto">
+            <input type="text" id="nome" placeholder="Nome do produto" required>
+            <input type="number" id="preco" placeholder="Preço" required step="0.01">
+            <input type="url" id="imagem" placeholder="URL da imagem (opcional)">
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div id="lista-produtos"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Smart Market América Sul</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
